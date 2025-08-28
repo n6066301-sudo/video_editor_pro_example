@@ -1,0 +1,45 @@
+name: pro_video_editor_example
+description: "Demonstrates how to use the pro_video_editor plugin."
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pro_video_editor:
+    path: ../
+
+
+  intl: ^0.20.1
+  cupertino_icons: ^1.0.8
+
+  pro_image_editor: ^11.0.0
+  
+  google_fonts: ^6.3.0
+  flutter_colorpicker: ^1.1.0
+  mime: ^2.0.0
+
+  path_provider: ^2.1.5
+  video_player: ^2.9.3
+  # Optional multiplatform video player
+  media_kit: ^1.1.11 # Primary package.
+  media_kit_video: ^1.2.5 # For video rendering.
+  media_kit_libs_video: ^1.0.5 # Native video dependencies.
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+ 
+  flutter_lints: ^6.0.0
+ 
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/demo.mp4
+    - assets/demo.mov
